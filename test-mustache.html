@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mustache stuff</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.js"></script>
+        <script src="mustache.js"></script>
+        <script src="utilz.js"></script>
+    </head>
+    <body>
+        <hr>
+
+        <div id="target1">Kontent</div>
+        <script id="template1" type="text/x-tmpl-mustache">
+            Hello {{ name }}!
+        </script>
+        <script>renderTo('target1', 'template1', {name: 'Juozas'})</script>
+
+        <hr>
+    </body>
+</html>
